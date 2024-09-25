@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_CREDENTIALS = credentials('sumanth2904') // Reference your credentials ID
-        DOCKER_IMAGE = 'sumanth2904/hms-web-1'
+        DOCKER_CREDENTIALS = credentials('bhanuprakashm99') // Reference your credentials ID
+        DOCKER_IMAGE = 'bhanuprakashm99/hms-web-1'
         CONTAINER_NAME = 'hms-web-container-2' // Name your container for easy reference
         BASE_PORT = 8300 // Starting port number
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Git Cloning') {
             steps {
-                git credentialsId: 'sumanthg2904', url: 'https://github.com/sumanthg2904/my-sep-24-task-repo.git'
+                git credentialsId: 'bhanuprakashm99', url: 'https://github.com/bhanuprakashm29/public.git'
             }
         }
 
